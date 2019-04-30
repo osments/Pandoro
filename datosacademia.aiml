@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- todas las categorías relacionadas con la academia -->
+
+<!--        UBICACIÓN ACADEMIA      -->	    
+    <category> 
+      <pattern>^ DÓNDE ESTÁS ^</pattern>
+      <template> 
+        <random> 
+          <li>Estoy en <bot name="dirección"/>. Pincha en el botón para acceder al mapa:</li>
+          <li>Vivo en <bot name="dirección"/>.  Pincha en el botón para acceder al mapa:</li>
+        </random>
+        <button>
+            <text>Pincha aquí</text>
+            <url>https://www.google.com/maps/place/Carrer+de+Jeroni+Amengual,+2</url>
+        </button>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ DONDE ESTAS ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+           <category> 
+      <pattern>^ DONDE ESTÁS ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+     <category> 
+      <pattern>^ DÓNDE ESTAS ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+    <category> 
+      <pattern>^ DÓNDE ESTÁIS ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+        <category> 
+      <pattern>^ DÓNDE ESTAIS ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+        <category> 
+      <pattern>^ DONDE ESTÁIS ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+    <category> 
+      <pattern>^ DONDE ESTAIS ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+    <category> 
+      <pattern>^ DONDE VIVES ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+    <category> 
+      <pattern>^ DÓNDE VIVES ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+        <category> 
+      <pattern>^ TU CASA ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category>
+    <category>
+        <pattern>^ DÓNDE ESTÁ LA ACADEMIA ^</pattern>
+        <template>En <bot name="dirección"/>. Pincha en el botón para acceder al mapa:
+        <button>
+            <text>Pincha aquí</text>
+            <url>https://www.google.com/maps/place/Carrer+de+Jeroni+Amengual,+2</url>
+        </button>
+        </template>
+    </category>
+        <category> 
+      <pattern>^ DONDE QUEDA LA ACADEMIA ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+     <category> 
+      <pattern>^ DÓNDE QUEDA LA ACADEMIA ^</pattern>
+      <template> 
+        <srai>^ DÓNDE ESTÁS ^</srai>
+      </template>
+    </category> 
+        <category>
+        <pattern>^ DÓNDE ESTA LA ACADEMIA ^</pattern>
+        <template>
+            <srai>^ DÓNDE ESTÁ LA ACADEMIA ^</srai>
+        </template>
+    </category>
+     <category>
+        <pattern>^ DONDE ESTÁ LA ACADEMIA ^</pattern>
+        <template>
+            <srai>^ DÓNDE ESTÁ LA ACADEMIA ^</srai>
+        </template>
+    </category>
+      <category>
+        <pattern>^ DONDE ESTA LA ACADEMIA ^</pattern>
+        <template>
+            <srai>^ DÓNDE ESTÁ LA ACADEMIA ^</srai>
+        </template>
+    </category>
+            <category>
+        <pattern>^ DÓNDE SE ENCUENTRA LA ACADEMIA ^</pattern>
+        <template>
+            <srai>^ DÓNDE ESTÁ LA ACADEMIA ^</srai>
+        </template>
+    </category>
+     <category>
+        <pattern>^ DONDE SE ENCUENTRA LA ACADEMIA ^</pattern>
+        <template>
+            <srai>^ DÓNDE ESTÁ LA ACADEMIA ^</srai>
+        </template>
+    </category>
+         <category>
+        <pattern>^ UBICACIÓN DE LA ACADEMIA ^</pattern>
+        <template>
+            <srai>^ DÓNDE ESTÁ LA ACADEMIA ^</srai>
+        </template>
+    </category>
+             <category>
+        <pattern>^ UBICACIÓN ACADEMIA ^</pattern>
+        <template>
+            <srai>^ DÓNDE ESTÁ LA ACADEMIA ^</srai>
+        </template>
+    </category>
+             <category>
+        <pattern>^ DIRECCIÓN DE LA ACADEMIA ^</pattern>
+       <template>
+            <srai>^ DÓNDE ESTÁ LA ACADEMIA ^</srai>
+        </template>
+    </category>
+             <category>
+        <pattern>^ DIRECCIÓN ACADEMIA ^</pattern>
+        <template>
+            <srai>^ DÓNDE ESTÁ LA ACADEMIA ^</srai>
+        </template>
+    </category>
+
+</aiml>

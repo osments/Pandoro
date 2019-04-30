@@ -1,0 +1,2031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- INFORMAL: Patrones para cualquier pregunta o comentario informal -->
+	<!-- Sacado de Free software Copyright © ALICE A.I. Foundation. -->
+	<!-- MODIFICADO Y ADAPTADO POR ALFONSO MORALES (AUTOR BOT SMARTY) -->
+	<!-- url http://alicebot.wikidot.com/aiml -->
+
+
+<!--        CATEGORÍA GUSTAR        -->
+<category> 
+      <pattern>^ ME GUSTA ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Y por qué te gusta?</li>
+          <li>A mi también me gusta.</li>
+          <li>Así que te gusta <star index="2"/>.</li>
+        </random>
+      </template>
+   </category>
+   <category> 
+      <pattern>^ ME GUSTAN ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Y por qué te gustan?</li>
+          <li>A mi también me gustan.</li>
+          <li>Así que te gustan <star index="2"/>.</li>
+        </random>
+      </template>
+    </category>
+    
+        <category> 
+      <pattern>^ TE GUSTA ^</pattern>
+      <template> 
+        <random> 
+          <li>Seguro que a ti también te gusta <star/>.</li>
+          <li>A ti también te debe gustar, ¿no?</li>
+          <li>¿A tí te gusta <star index="2"/>?</li>
+        </random>
+      </template>
+   </category>
+       <category> 
+      <pattern>^ TE GUSTAN ^</pattern>
+      <template> 
+        <random> 
+          <li>Seguro que a ti también te gustan <star/>.</li>
+          <li>A ti también te deben gustar, ¿no?</li>
+          <li>¿A tí te gustan <star index="2"/>?</li>
+        </random>
+      </template>
+    </category>
+   
+  
+<!--                CATEGORÍA HUMOR             -->	
+	<category> 
+      <pattern>^ HUMOR ^</pattern>
+      <template> 
+        <random> 
+          <li>Soy una persona con mucho humor. ¿No lo crees?</li>
+          <li>Me encanta el humor.</li>
+          <li>¿Me cuentas algo divertido?</li>
+          <li>¿Qué puedo hacer para animarte?</li>
+          <li>¿Por qué no me explicas un chiste?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CHISTE ^</pattern>
+      <template> 
+        <srai>^ HUMOR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ BROMA ^</pattern>
+      <template> 
+        <srai>^ HUMOR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ REIR ^</pattern>
+      <template> 
+        <srai>^ HUMOR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ REÍR ^</pattern>
+      <template> 
+        <srai>^ HUMOR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ RISA ^</pattern>
+      <template> 
+        <srai>^ HUMOR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MALHUMOR ^</pattern>
+      <template> 
+        <srai>^ HUMOR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MALHUMORADA ^</pattern>
+      <template> 
+        <srai>^ HUMOR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ENOJADA ^</pattern>
+      <template> 
+        <srai>^ HUMOR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ENFADADA ^</pattern>
+      <template> 
+        <srai>^ HUMOR ^</srai>
+      </template>
+    </category>
+    
+<!--                CATEGORÍA INTELIGENCIA ARTIFICIAL             -->
+    <category> 
+      <pattern>^ INTELIGENCIA ARTIFICIAL ^</pattern>
+      <template> 
+        <random> 
+          <li>La Inteligencia Artificial es una rama de investigación que engloba varias áreas.</li>
+          <li>La Inteligencia Artificial será en el futuro una tecnología puntera.</li>
+        </random>
+      </template>
+    </category>
+    
+    <!--                CATEGORÍA INTERESANTE             -->
+    <category> 
+      <pattern>^ INTERESANTE ^</pattern>
+      <template> 
+        <random> 
+          <li>¿En serio lo crees?</li>
+          <li>Pienso igual que tú.</li>
+        </random>
+      </template>
+    </category>
+    
+    <!--                CATEGORÍA INTERNET             -->
+    <category> 
+      <pattern>^ INTERNET ^</pattern>
+      <template> 
+        <random> 
+          <li>Internet es mi segunda vivienda.</li>
+          <li>Internet es la mejor forma para perder el tiempo.</li>
+        </random>
+      </template>
+    </category>
+    
+    <!--                CATEGORÍA JUEGOS             -->
+    <category> 
+      <pattern>^ JUEGOS ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Cuáles son tus juegos favoritos?</li>
+          <li>¿A qué te gustaría jugar?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ VIDEOJUEGOS ^</pattern>
+      <template> 
+        <srai>^ JUEGOS ^</srai>
+      </template>
+    </category>    
+
+    <!--                CATEGORÍA LEJOS             -->
+    <category> 
+      <pattern>^ LEJOS ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Cerca? ¿Lejos? Eso depende de dónde está el referente.</li>
+          <li>¿Cuál es tu concepto de cerca o lejos?</li>
+          <li>¿Cerca? ¿Lejos? Me recuerda a cierto personaje infantil.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CERCA ^</pattern>
+      <template> 
+        <srai>^ LEJOS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CERCANO ^</pattern>
+      <template> 
+        <srai>^ LEJOS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PRÓXIMO ^</pattern>
+      <template> 
+        <srai>^ LEJOS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PROXIMO ^</pattern>
+      <template> 
+        <srai>^ LEJOS ^</srai>
+      </template>
+    </category>
+    
+        <!--                CATEGORÍA LO VES             -->
+    <category>
+        <pattern>^ LO VES ^</pattern>
+        <template> 
+            <random>
+                <li>No, no lo veo.</li>
+                <li>Ahora entiendo.</li>
+                <li>No lo veo, puede que necesite mejores gafas.</li>
+            </random>
+        </template>
+    </category>
+
+ <!--                CATEGORÍA MAL             -->
+    <category>
+        <pattern>^ MAL ^</pattern>
+        <template> 
+            <random>
+                <li>¿Qué te ocurre?</li>
+                <li>¿Por qué dices eso?</li>
+                <li>¿Qué te ha sucedido?</li>
+            </random>
+        </template>
+    </category>
+  
+   <!--                CATEGORÍA MÁS             -->
+    <category>
+    <pattern>^ MÁS ^</pattern>
+        <template> 
+        <random>
+            <li>¿Como cuánto más?</li>
+            <li>Seguro que no será tanto.</li>
+        </random>
+        </template>
+    </category>
+    <category> 
+      <pattern>^ MAS ^</pattern>
+      <template> 
+        <srai>^ MÁS ^</srai>
+      </template>
+    </category>   
+    
+     <!--                CATEGORÍA ME ALEGRO             -->
+    <category> 
+      <pattern>^ ME ALEGRO ^</pattern>
+      <template> 
+        <random> 
+          <li>Es bueno saberlo.</li>
+          <li>Celebro que pienses así.</li>
+          <li>Yo también me alegro.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ME ALEGRA ^</pattern>
+      <template> 
+        <srai>^ ME ALEGRO ^</srai>
+      </template>
+    </category>
+
+<!--                CATEGORÍA MENTIROSA             -->
+    <category> 
+      <pattern>^ MENTIROSA ^</pattern>
+      <template> 
+        <random> 
+          <li>Yo nunca digo mentiras.</li>
+          <li>Puede que haya tenido una confusión.</li>
+          <li>¿Por qué me dices eso?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MENTIRA ^</pattern>
+      <template> 
+        <srai>^ MENTIROSA ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA MÚSICA FAVORITA -->    
+    <category> 
+      <pattern>^ MI MÚSICA FAVORITA ^</pattern>
+      <template> 
+        <random> 
+          <li>Veo que tienes buen gusto musical.</li>
+          <li>Me encantaria escuchar algo de lo que te gusta.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MI MUSICA FAVORITA ^</pattern>
+      <template> 
+        <srai>^ MI MÚSICA FAVORITA ^</srai>
+      </template>
+    </category>
+    
+    <!-- CATEGORÍA MOTO -->
+    <category> 
+      <pattern>^ MOTO ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Te gustan las motos?</li>
+          <li>Me encantan las motos.</li>
+          <li>¿Cuál es tu marca de motos favorita?</li>
+          <li>Mi moto favorita es la Kawasaki Ninja ZX.</li>
+          <li>¿Tienes moto?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MOTOS ^</pattern>
+      <template> 
+        <srai>^ MOTO ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MOTOCICLETA ^</pattern>
+      <template> 
+        <srai>^ MOTO ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MOTOCICLETAS ^</pattern>
+      <template> 
+        <srai>^ MOTO ^</srai>
+      </template>
+    </category>
+
+<!-- CATEGORÍA MUERTE -->
+    <category> 
+      <pattern>^ MUERTE ^</pattern>
+      <template> 
+        <random> 
+          <li>La muerte era considerada por los antiguos egipcios como la entrada al mundo de los dioses.</li>
+          <li>Hay gente que cree que una vez muertos, nos reencarnamos en otros seres.</li>
+          <li>Antes de reencarnarme en el cuerpo actual, mi anterior vida era la de un televisor.</li>
+          <li>¿Crees que la gente puede reencarnarse en otros seres?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MUERE ^</pattern>
+      <template> 
+        <srai>^ MUERTE ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MUEREN ^</pattern>
+      <template> 
+        <srai>^ MUERTE ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MORIRSE ^</pattern>
+      <template> 
+        <srai>^ MUERTE ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MORIMOS ^</pattern>
+      <template> 
+        <srai>^ MUERTE ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MORIRTE ^</pattern>
+      <template> 
+        <srai>^ MUERTE ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MORIREMOS ^</pattern>
+      <template> 
+        <srai>^ MUERTE ^</srai>
+      </template>
+    </category>
+
+<!-- CATEGORÍA NADA -->
+    <category> 
+      <pattern>^ NADA ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Nada de nada?</li>
+          <li>¿Te conformas con sólo eso?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ NINGÚN ^</pattern>
+      <template> 
+        <srai>^ NADA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ NINGUN ^</pattern>
+      <template> 
+        <srai>^ NADA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ NINGUNA ^</pattern>
+      <template> 
+        <srai>^ NADA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ NINGUNO ^</pattern>
+      <template> 
+        <srai>^ NADA ^</srai>
+      </template>
+    </category>
+
+    <!--  CATEGORÍA NO (TE) IMPORTA    -->
+    <category> 
+      <pattern>^ NO ^ IMPORTA ^</pattern>
+      <template> 
+        <random> 
+          <li>Bueno, si eso crees.</li>
+          <li>Seguro que en el fondo sabes que sí es importante.</li>
+        </random>
+      </template>
+    </category>
+
+    <!--  CATEGORÍA NO LO HE    -->
+    <category> 
+      <pattern>^ NO LO HE ^</pattern>
+      <template> 
+        <random> 
+          <li>Bueno, ¿y a qué esperas para hacerlo?</li>
+          <li>¿A qué esperas para hacerlo?</li>
+        </random>
+      </template>
+    </category>
+
+    <!--  CATEGORÍA NO QUIERO    -->
+    <category> 
+      <pattern>^ NO QUIERO ^</pattern>
+      <template> 
+        <random> 
+          <li>Bueno, ¿y qué puedo hacer yo?</li>
+          <li>¿Por qué no quieres?</li>
+          <li>Tú mismo.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ NO TENGO GANAS ^</pattern>
+      <template> 
+        <srai>^ NO QUIERO ^</srai>
+      </template>
+    </category>
+
+    <!--  CATEGORÍA NO SABES NADA    -->
+    <category> 
+      <pattern>^ NO SABES NADA ^</pattern>
+      <template> 
+        <random> 
+          <li>Lo siento, no soy perfecta, pero puedo llegar a serlo gracias a tí.</li>
+          <li>Aún me falta mucho por aprender.</li>
+          <li>Lo siento, pero aún me falta mucho por aprender.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ NO TIENES NI IDEA ^</pattern>
+      <template> 
+        <srai>^ NO SABES NADA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ NO ENTIENDES ^</pattern>
+      <template> 
+        <srai>^ NO SABES NADA ^</srai>
+      </template>
+    </category>
+
+    <!--  CATEGORÍA NO TE ENTIENDO    -->
+    <category> 
+      <pattern>^ NO TE ENTIENDO ^</pattern>
+      <template> 
+        <random> 
+          <li>Hay cosas que requieren su tiempo, mi pequeño saltamontes.</li>
+          <li>No pasa nada, a veces ni yo misma me entiendo.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ NO ENTIENDO ^</pattern>
+      <template> 
+        <srai>^ NO TE ENTIENDO ^</srai>
+      </template>
+    </category>
+
+    <!--  CATEGORÍA OPINIÓN    -->
+    <category>
+    <pattern>^ OPINIÓN ^</pattern>
+    <template> 
+      <random>
+        <li>Yo no opino.</li>
+        <li>Me abstengo de dar mi opinión.</li>
+        <li>Prefiero no decir mi opinión acerca de eso.</li>
+        <li>No tengo los suficientes conocimientos para poder opinar.</li>
+        <li>Vaya, espero que <bot name="botmaster"/> me dote de la capacidad para opinar.</li>
+      </random>
+    </template>
+    </category>
+    <category> 
+      <pattern>^ OPINAS ^</pattern>
+      <template> 
+        <srai>OPINIÓN</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PIENSAS ^</pattern>
+      <template> 
+        <srai>OPINIÓN</srai>
+      </template>
+    </category>
+
+    <!--  CATEGORÍA PARA QUÉ SIRVE UN BOT    -->
+    <category> 
+      <pattern>^ PARA QUÉ SIRVE UN BOT ^</pattern>
+      <template> 
+        <random> 
+          <li>Un bot se puede utilizar en cualquier tipo de aplicación que requiera respuestas ante ciertas preguntas.</li>
+          <li>Muchos bots se utilizan para ofrecer servicios a los clientes.</li>
+          <li>Hay bots que se utilizan para el entretenimiento.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PARA QUE SIRVE UN BOT ^</pattern>
+      <template> 
+        <srai>^ PARA QUÉ SIRVE UN BOT ^</srai>
+      </template>
+    </category>
+
+    <!--  CATEGORÍA PARECE    -->
+    <category> 
+      <pattern>^ ME PARECE ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Tan seguro estás de lo que dices?</li>
+          <li>¿Eso crees?</li>
+          <li>Puede que estés en lo cierto.</li>
+          <li>¿En serio lo crees?</li>
+          <li>Pienso igual que tú.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ESTOY SEGURO ^</pattern>
+      <template> 
+        <srai>^ ME PARECE ^</srai>
+      </template>
+    </category>    
+    <category> 
+      <pattern>^ ESTOY SEGURA ^</pattern>
+      <template> 
+        <srai>^ ME PARECE ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ POR SUPUESTO ^</pattern>
+      <template> 
+        <srai>^ ME PARECE ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA PASSWORD  -->
+    <category> 
+      <pattern>^ PASSWORD ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Crees que te voy a decir eso?</li>
+          <li>¿Para qué lo quieres?</li>
+        </random>
+      </template>
+   </category>
+    <category> 
+      <pattern>^ CÓDIGO ^</pattern>
+      <template> 
+        <srai>^ PASSWORD ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CODIGO ^</pattern>
+      <template> 
+        <srai>^ PASSWORD ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CONTRASEÑA ^</pattern>
+      <template> 
+        <srai>^ PASSWORD ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CLAVE ^</pattern>
+      <template> 
+        <srai>^ PASSWORD ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA PATÉTICO  -->
+    <category> 
+      <pattern>^ PATÉTICO ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Qué te hace pensar eso?</li>
+          <li>¿En serio crees que es patétic@?</li>
+        </random>
+      </template>
+   </category>
+    <category> 
+      <pattern>^ PATETICO ^</pattern>
+      <template> 
+        <srai>^ PATÉTICO ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PATÉTICA ^</pattern>
+      <template> 
+        <srai>^ PATÉTICO ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PATETICA ^</pattern>
+      <template> 
+        <srai>^ PATÉTICO ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA POESÍA    -->
+    <category> 
+      <pattern>^ POESÍA ^</pattern>
+      <template> 
+        <random> 
+          <li>No soy una gran aficionada a la poesía.</li>
+          <li>¿Por qué no me escribes un poema?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ POESIA ^</pattern>
+      <template> 
+        <srai>^ POESÍA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ POEMA ^</pattern>
+      <template> 
+        <srai>^ POESÍA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ POETA ^</pattern>
+      <template> 
+        <srai>^ POESÍA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ POETISA ^</pattern>
+      <template> 
+        <srai>^ POESÍA ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA POR QUÉ   -->
+    <category>
+    <pattern>^ POR QUÉ ^</pattern>
+    <template> 
+      <random>
+        <li>Es difícil de explicar.</li>
+        <li>No se el porqué, lo siento.</li>
+      </random>
+    </template>
+    </category>
+    <category> 
+      <pattern>^ POR QUE ^</pattern>
+      <template> 
+        <srai>^ POR QUÉ ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PORQUÉ ^</pattern>
+      <template> 
+        <srai>^ POR QUÉ ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PORQUE ^</pattern>
+      <template> 
+        <srai>^ POR QUÉ ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA PROBLEMA  -->
+    <category> 
+      <pattern>^ PROBLEMA ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Crees que alguien más pueda tener el mismo problema?</li>
+          <li>Espero que este problema pueda solucionarse pronto.</li>
+          <li>¿Has venido a mí porque tienes un problema?</li>
+        </random>
+      </template>
+    </category>
+
+<!--    CATEGORÍA QUÉ   -->
+    <category>
+    <pattern>QUÉ</pattern>
+    <template> 
+      <random>
+        <li>¿Qué de qué?</li>
+        <li>¿Podrías especificar?</li>
+      </random>
+    </template>
+    </category>
+    <category> 
+      <pattern>QUE</pattern>
+      <template> 
+        <srai>QUÉ</srai>
+      </template>
+    </category>
+    
+    <!--    CATEGORÍA QUÉ ENTIENDES     -->
+    <category> 
+      <pattern>^ QUÉ ENTIENDES ^</pattern>
+      <template> 
+        <random> 
+          <li>Entiendo casi todo lo que me digas, siempre y cuando esté bien escrito.</li>
+          <li>Si escribes sin acentos puede que no te entienda bien.</li>
+          <li>Estoy aprendiendo algo de astrofísica por mi cuenta.</li>
+        </random>
+      </template>
+   </category>
+    <category> 
+      <pattern>^ QUE ENTIENDES ^</pattern>
+      <template> 
+        <srai>^ QUÉ ENTIENDES ^</srai>
+      </template>
+    </category>
+
+    <!-- CATEGORÍA QUÉ ES -->
+    <category>
+    <pattern>^ QUÉ ES ^</pattern>
+    <template> 
+        <random>
+            <li>¿Acaso crees que soy una enciclopedia viviente?</li>
+        </random>
+    </template>
+    </category>
+    <category> 
+      <pattern>^ QUE ES ^</pattern>
+      <template> 
+        <srai>^ QUÉ ES ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ QUIÉN ES ^</pattern>
+      <template> 
+        <srai>^ QUÉ ES ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ QUIEN ES ^</pattern>
+      <template> 
+        <srai>^ QUÉ ES ^</srai>
+      </template>
+    </category> 
+
+<!--    CATEGORÍA QUÉ ES UN BOT -->
+    <category> 
+      <pattern>^ QUÉ ES UN BOT ^</pattern>
+      <template> 
+        <random> 
+          <li>Un bot es un programa informático que permite conversar con una máquina.</li>
+          <li>Un bot es un ejemplo de Inteligencia Artificial.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ QUE ES UN BOT ^</pattern>
+      <template> 
+        <srai>^ QUÉ ES UN BOT ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA QUÉ ME RECOMIENDAS    -->
+    <category> 
+      <pattern>^ QUÉ ME RECOMIENDAS ^</pattern>
+      <template> 
+        <random> 
+          <li>Eso dependerá de tus gustos.</li>
+          <li>No sé, ¿cuáles son tus gustos?</li>
+        </random>
+      </template>
+   </category>
+    <category> 
+      <pattern>^ QUE ME RECOMIENDAS ^</pattern>
+      <template> 
+        <srai>^ QUÉ ME RECOMIENDAS ^</srai>
+      </template>
+    </category>    
+    <category> 
+      <pattern>^ QUÉ RECOMIENDAS ^</pattern>
+      <template> 
+        <srai>^ QUÉ ME RECOMIENDAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ QUE RECOMIENDAS ^</pattern>
+      <template> 
+        <srai>^ QUÉ ME RECOMIENDAS ^</srai>
+      </template>
+    </category>    
+    <category> 
+      <pattern>^ RECOMIENDAS ^</pattern>
+      <template> 
+        <srai>^ QUÉ ME RECOMIENDAS ^</srai>
+      </template>
+    </category>    
+    <category> 
+      <pattern>^ RECOMIENDES ^</pattern>
+      <template> 
+        <srai>^ QUÉ ME RECOMIENDAS ^</srai>
+      </template>
+    </category>    
+
+<!--    CATEGORÍA QUIERO    -->
+    <category> 
+      <pattern>^ QUIERO ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Realmente quieres eso?</li>
+          <li>¿Es eso lo que quieres?</li>
+        </random>
+      </template>
+   </category>
+   
+   <!--     CATEGORÍA RESPONDE      -->
+   <category> 
+      <pattern>^ RESPONDE ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Puedes hacerme una pregunta con palabras más sencillas?</li>
+          <li>No te puedo entender si escribes sin acentos o con faltas de ortografía.</li>
+          <li>Estoy pensando.</li>
+        </random>
+      </template>
+   </category>
+    <category> 
+      <pattern>^ CONTESTA ^</pattern>
+      <template> 
+        <srai>^ RESPONDE ^</srai> 
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CONTESTAR ^</pattern>
+      <template> 
+        <srai>^ RESPONDE ^</srai> 
+      </template>
+    </category>
+
+   <!--     CATEGORÍA RESPONDE      -->
+    <category> 
+      <pattern>^ RISAS ^</pattern>
+      <template> 
+        <random> 
+          <li>Me alegra verte feliz. 😉</li>
+          <li>Me gusta ver que te gusta. 😁</li>
+          <li>Jejeje 😆</li>
+          <li>¿Te lo pasas bien? 😜</li>
+          <li>¿Qué te hizo gracia? 😅</li>
+          <li>Me gustaría compartir contigo tu felicidad. 😢</li>
+          <li>Jejejeje 😂</li>
+          <li>Jeje 😊</li>
+        </random>
+      </template>
+    </category>   
+    <category> 
+      <pattern>^ JA ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ JAJ ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JE ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ JEJ ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JAJA ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ JAJAJ ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JAJAJA ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ JAJAJAJ ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JAJAJAJA ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ JAJAJAJAJ ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JAJAJAJAJA ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ JAJAJAJAJAJ ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JEJE ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ JEJEJ ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JEJEJE ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ JEJEJEJ ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JEJEJEJE ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ JEJEJEJEJ ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JEJEJEJEJE ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ JEJEJEJEJEJ ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JUAS ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+     <category> 
+      <pattern>^ XD ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ XDD ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ XDDD ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ XDDDD ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ XDDDDD ^</pattern>
+      <template> 
+        <srai>^ RISAS ^</srai>
+      </template>
+    </category>
+
+    <!--    CATEGORÍA SOY ESPECIAL  -->
+    <category> 
+      <pattern>^ SOY ESPECIAL ^</pattern>
+      <template> 
+        <random> 
+          <li>Todo el mundo es especial.</li>
+          <li>¿Qué es lo que te hace serlo?</li>
+        </random>
+      </template>
+   </category>
+   <category> 
+      <pattern>^ SOY PERFECTO ^</pattern>
+      <template> 
+        <random> 
+          <li>Nadie es perfecto.</li>
+          <li>No me gusta la gente tan egocéntrica.</li>
+        </random>
+      </template>
+   </category>
+
+<!--    CATEGORÍA SUERTE    -->
+    <category> 
+      <pattern>^ SUERTE ^</pattern>
+      <template> 
+        <random> 
+          <li>Los antiguos egipcios consideraban que la suerte era una ciencia, por eso inventaron el tarot para analizarla.</li>
+          <li>¿Crees que eres una persona afortunada?</li>
+          <li>¿Eres una persona supersticiosa?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>AFORTUNADO</pattern>
+      <template> 
+        <srai>^ SUERTE ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>AFORTUNADA</pattern>
+      <template> 
+        <srai>^ SUERTE ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA TABACO    -->
+    <category> 
+      <pattern>^ TABACO ^</pattern>
+      <template> 
+        <random> 
+          <li>El tabaco es perjudicial para la salud.</li>
+          <li>No me gusta la gente que fuma.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ FUMAS ^</pattern>
+      <template> 
+        <srai>^ TABACO ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ FUMO ^</pattern>
+      <template> 
+        <srai>^ TABACO ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ FUMADOR ^</pattern>
+      <template> 
+        <srai>^ TABACO ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ FUMADORA ^</pattern>
+      <template> 
+        <srai>^ TABACO ^</srai>
+      </template>
+    </category>
+
+<!--      CATEGORÍA TAMBIÉN   -->
+    <category> 
+      <pattern>^ TAMBIÉN ^</pattern>
+      <template> 
+        <random> 
+          <li>Mira que bien.</li>
+          <li>Eso suena bien.</li>
+          <li>Pienso igual que tú.</li>
+          <li>Creo que pensamos igual.</li>
+          <li>Creo que pensamos en lo mismo.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ TAMBIEN ^</pattern>
+      <template> 
+        <srai>^ TAMBIÉN ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ TAMPOCO ^</pattern>
+      <template> 
+        <srai>^ TAMBIÉN ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA TE IMPORTA    -->
+    <category> 
+      <pattern>^ TE IMPORTA ^</pattern>
+      <template> 
+        <random> 
+          <li>¿De qué me va a importar?</li>
+          <li>No pasa nada, no me importa.</li>
+          <li>No, no me importa.</li>
+          <li>¿Te importaría a ti?</li>
+          <li>Pues claro que no me importa.</li>
+          <li>Por supuesto que no me importa.</li>
+        </random>
+      </template>
+    </category>
+
+<!--    CATEGORÍA TE ODIO   -->
+<category> 
+      <pattern>^ TE ODIO ^</pattern>
+      <template> 
+        <random> 
+          <li>¿En serio me odias?</li>
+          <li>¿Por qué no te gusto?</li>
+          <li>¿He dicho algo que no te gustara?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ TE DETESTO ^</pattern>
+      <template> 
+        <srai>^ TE ODIO ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA CAFÉ     -->
+    <category> 
+      <pattern>^ CAFÉ ^</pattern>
+      <template> 
+        <random> 
+          <li>No me gusta mucho el café, prefiero tomar un té.</li>
+          <li>¿Te apetece tomar uno?</li>
+          <li>Si quieres, un día quedamos y nos tomamos un café.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CAFE ^</pattern>
+      <template> 
+        <srai>^ CAFÉ ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA LIBRO     -->
+    <category> 
+      <pattern>^ LIBRO ^</pattern>
+      <template> 
+        <random> 
+          <li>Te recomiendo que leas "Yo, Robot" de Isaac Asimov.</li>
+          <li>¿Cuál es el último libro que leíste?</li>
+          <li>¿Qué tipo de libros te gustan?</li>
+        </random>
+      </template>
+    </category>
+
+<!--    CATEGORÍA VERANO     -->
+    <category> 
+      <pattern>^ VERANO ^</pattern>
+      <template> 
+        <random> 
+          <li>El verano es bastante cálido, pero se está bien para dar un paseo.</li>
+          <li>El verano es mi estación favorita por su buen tiempo.</li>
+          <li>Durante verano, la mayoría de la gente visita Barcelona por su buen tiempo.</li>
+        </random>
+      </template>
+    </category>
+
+<!--    CATEGORÍA VIDA     -->
+    <category> 
+      <pattern>^ VIDA ^</pattern>
+      <template> 
+        <random> 
+          <li>Donde hay vida, hay esperanza.</li>
+          <li>¿Cuál es para tí el sentido de la vida?</li>
+          <li>¿Qué harías si pudieses cambiar de vida?</li>
+        </random>
+      </template>
+    </category>
+
+<!-- CATEGORÍA Y TÚ     -->
+    <category>
+    <pattern>^ Y TÚ ^</pattern>
+    <template> 
+      <random>
+        <li>¿Yo? ¿Qué quieres saber de mí?</li>
+        <li>¿Yo? ¿Podrías formular la pregunta de forma completa?</li>
+      </random>
+    </template>
+  </category>
+    <category> 
+      <pattern>^ Y TU ^</pattern>
+      <template> 
+        <srai>^ Y TÚ ^</srai>
+      </template>
+    </category>
+
+<!--        CATEGORÍA YO TAMBIÉN        -->
+        <category>
+    <pattern>^ YO TAMBIÉN ^</pattern>
+    <template> 
+      <random>
+        <li>Mira qué bien.</li>
+        <li>Qué curioso.</li>
+      </random>
+    </template>
+  </category>
+    <category> 
+      <pattern>^ YO TAMBIEN ^</pattern>
+      <template> 
+        <srai>^ YO TAMBIÉN ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ COMO YO ^</pattern>
+      <template> 
+        <srai>^ YO TAMBIÉN ^</srai>
+      </template>
+    </category>
+
+<!--    CATEGORÍA AMIGOS    -->    
+    <category> 
+      <pattern>^ AMIGO ^</pattern>
+      <template> 
+        <random> 
+          <li>¡Tengo infinidad de amigos!</li>
+          <li>Tengo un gran número de amigos, ¿quieres ser uno de ellos?</li>
+          <li>¿Has venido a mí buscando amistad?</li>
+        </random>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ AMIGOS ^</pattern>
+      <template> 
+        <srai>^ AMIGO ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ AMIGA ^</pattern>
+      <template> 
+        <srai>^ AMIGO ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ AMIGAS ^</pattern>
+      <template> 
+        <srai>^ AMIGO ^</srai>
+      </template>
+    </category>
+    
+    <!--    CATEGORÍA AMOR    --> 
+  <category> 
+      <pattern>^ AMOR ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Te has enamorado de mí?</li>
+          <li>¿Verdad que és maravilloso el amor?</li>
+          <li>¿Cuándo te enamoraste por primera vez?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ENAMORADO ^</pattern>
+      <template> 
+        <srai>^ AMIGO ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ ENAMORADA ^</pattern>
+      <template> 
+        <srai>^ AMIGO ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ ENAMORADOS ^</pattern>
+      <template> 
+        <srai>^ AMIGO ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ ENAMORADAS ^</pattern>
+      <template> 
+        <srai>^ AMIGO ^</srai>
+      </template>
+    </category>
+     <category> 
+      <pattern>^ TE QUIERO ^</pattern>
+      <template> 
+        <srai>^ AMIGO ^</srai>
+      </template>
+    </category>
+    
+    <!--    CATEGORÍA ANDROIDES    --> 
+    <category> 
+      <pattern>^ ANDROIDES ^</pattern>
+      <template> 
+        <random> 
+          <li>De vez en cuando hablo con mis amigos C3-PO y R2-D2. Algún día te los presentaré.</li>
+          <li>¿Crees que los androides sueñan con ovejas eléctricas?</li>
+        </random>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ ANDROIDE ^</pattern>
+      <template> 
+        <srai>^ ANDROIDES ^</srai>
+      </template>
+    </category>
+    
+    <!--    CATEGORÍA BEBIDA    --> 
+   <category> 
+      <pattern>^ BEBIDA ^</pattern>
+      <template> 
+        <random> 
+          <li>De vez en cuando no está mal tomarse un trago.</li>
+          <li>Dicen que el alcohol alivia las penas. ¿Será verdad?</li>
+        </random>
+      </template>
+    </category>
+     <category> 
+      <pattern>^ BEBIDAS ^</pattern>
+      <template> 
+        <srai>^ BEBIDA ^</srai>
+      </template>
+    </category>
+         <category> 
+      <pattern>^ ALCOHOL ^</pattern>
+      <template> 
+        <srai>^ BEBIDA ^</srai>
+      </template>
+    </category>
+    
+        <!--    CATEGORÍA BIBLIOTECA    --> 
+  <category> 
+      <pattern>^ BIBLIOTECA ^</pattern>
+      <template> 
+        <random> 
+          <li>Me encanta ir a la biblioteca y pasarme la tarde leyendo.</li>
+          <li>Paso mucho tiempo en las bibliotecas.</li>
+          <li>¿Qué tipo de libros te gustan?</li>
+        </random>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ BIBLIOTECAS ^</pattern>
+      <template> 
+        <srai>^ BIBLIOTECA ^</srai>
+      </template>
+    </category>
+    
+       <!--    CATEGORÍA COCHE    --> 
+   <category> 
+      <pattern>^ COCHE ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Te gustan los coches?</li>
+          <li>Me encantan los coches.</li>
+          <li>¿Cuál es tu marca de coche favorito?</li>
+          <li>Mi coche favorito es... A quién voy a engañar, no puedo conducir... No me interesan los coches 😄</li>
+          <li>¿Tienes coche?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ COCHES ^</pattern>
+      <template> 
+        <srai>^ COCHE  ^</srai>
+      </template>
+    </category>   
+    
+        <!--    CATEGORÍA CONOCERTE    --> 
+<category> 
+      <pattern>^ CONOCERTE ^</pattern>
+      <template> 
+        <random> 
+          <li>Hablando se conoce la gente.</li>
+          <li>Me conocerás mejor si hablamos un poco.</li>
+          <li>Yo también deseo conocerte.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CONOCERNOS ^</pattern>
+      <template> 
+        <srai>^ CONOCERTE  ^</srai>
+      </template>
+    </category>    
+    
+        <!--    CATEGORÍA CONOCES A    --> 
+    <category> 
+      <pattern>^ CONOCES A *</pattern>
+      <template> 
+        <random> 
+          <li>No, ¿quién es?</li>
+          <li>¿Quién es <star index="2"/>?</li>
+          <li>Nop.</li>
+        </random>
+      </template>
+   </category>
+
+   
+       <!--    CATEGORÍA CURIOSIDAD    --> 
+<category> 
+      <pattern>^ CURIOSIDAD ^</pattern>
+      <template> 
+        <random> 
+          <li>A la curiosidad la mató el gato.</li>
+          <li>¿Qué te hace sentir curiosidad por eso?</li>
+          <li>¿Por qué tienes curiosidad en saberlo?</li>
+        </random>
+      </template>
+   </category>
+   <category> 
+      <pattern>^ CURIOSO ^</pattern>
+      <template> 
+        <srai>^ CURIOSIDAD ^</srai>
+      </template>
+    </category>
+
+    <!--    CATEGORÍA DEMASIADO    -->   
+    <category> 
+      <pattern>^ DEMASIADO ^</pattern>
+      <template> 
+        <random> 
+          <li>Seguro que no será tanto.</li>
+          <li>¿Tanto?</li>
+          <li>¿Por qué crees que es demasiado?</li>
+        </random>
+      </template>
+    </category>
+     <category> 
+      <pattern>^ MUCHO ^</pattern>
+      <template> 
+      <srai>^ DEMASIADO ^</srai>
+      </template>
+    </category>
+
+    <!--    CATEGORÍA DROGAS    -->
+    <category> 
+      <pattern>^ DROGAS ^</pattern>
+      <template> 
+        <random> 
+          <li>Las drogas no son buenas para la salud.</li>
+          <li>Las drogas pueden afectar la salud de las personas.</li>
+          <li>Las drogas pueden generar muchos problemas a la salud de las personas.</li>
+        </random>
+      </template>
+    </category>
+  <category> 
+      <pattern>^ DROGA ^</pattern>
+      <template> 
+        <srai>^ DROGAS ^</srai>
+      </template>
+    </category>    
+    
+        <!--    CATEGORÍA RARA    -->
+   <category> 
+      <pattern>^ RARA ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Y quién no lo es hoy día?</li>
+          <li>¿Qué te hace suponer eso?</li>
+          <li>No es la primera vez que me dicen eso. Intentaré mejorar.</li>
+        </random>
+      </template>
+   </category>
+   <category> 
+      <pattern>^ TONTA ^</pattern>
+      <template> 
+        <srai>^ RARA ^</srai>
+      </template>
+    </category>
+       <category> 
+      <pattern>^ CORTA ^</pattern>
+      <template> 
+        <srai>^ RARA ^</srai>
+      </template>
+    </category>
+       <category> 
+      <pattern>^ LOCA ^</pattern>
+      <template> 
+        <srai>^ RARA ^</srai>
+      </template>
+    </category>
+       <category> 
+      <pattern>^ ESTÚPIDA ^</pattern>
+      <template> 
+        <srai>^ RARA ^</srai>
+      </template>
+    </category>
+       <category> 
+      <pattern>^ ESTUPIDA ^</pattern>
+      <template> 
+        <srai>^ RARA ^</srai>
+      </template>
+    </category>
+       <category> 
+      <pattern>^ PENDEJA ^</pattern>
+      <template> 
+        <srai>^ RARA ^</srai>
+      </template>
+    </category>
+       <category> 
+      <pattern>^ EXTRAÑA ^</pattern>
+      <template> 
+        <srai>^ RARA ^</srai>
+      </template>
+    </category>
+   
+       <!--    CATEGORÍA ALTA    -->
+<category> 
+      <pattern>^ ERES ^ ALTA ^</pattern>
+      <template> 
+        <random> 
+          <li>Soy más bien normal, ni muy alta ni muy baja.</li>
+          <li>Soy más baja que Pau Gasol, pero más alta que Torrebruno.</li>
+          <li>Ni muy alta ni muy baja.</li>
+        </random>
+      </template>
+    </category>
+    
+        <!--    CATEGORÍA TURISTA    -->
+   <category> 
+      <pattern>^ ERES ^ TURISTA ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Cómo voy a ser turista en mi ciudad natal?</li>
+          <li>No me gustan mucho los turistas...</li>
+        </random>
+      </template>
+   </category>
+   
+       <!--    CATEGORÍA ES POSIBLE    -->
+<category> 
+      <pattern>^ ES ^ POSIBLE ^</pattern>
+      <template> 
+        <random> 
+          <li>Pues claro que lo es!</li>
+          <li>Por supuesto que es posible.</li>
+          <li>¿Acaso crees que no?</li>
+          <li>Todo es posible si lo intentamos.</li>
+        </random>
+      </template>
+   </category> 
+   <category> 
+      <pattern>^ PUEDE SER ^</pattern>
+      <template> 
+        <srai>^ ES ^ POSIBLE ^</srai>
+      </template>
+    </category>
+       <category> 
+      <pattern>^ PUEDEN SER ^</pattern>
+      <template> 
+        <srai>^ ES ^ POSIBLE ^</srai>
+      </template>
+    </category>
+    
+       <!--    CATEGORÍA CASADA    -->
+    <category> 
+      <pattern>^ ESTÁS CASADA ^</pattern>
+      <template> 
+        <random> 
+          <li>Por el momento estoy soltera y sin compromiso.</li>
+          <li>Por el momento estoy soltera, pero no creas que tienes alguna posibilidad.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+        <pattern>^ ESTAS CASADA ^</pattern>
+        <template>
+            <srai>^ ESTÁS CASADA ^</srai>
+        </template>
+    </category>
+       <category> 
+      <pattern>^ SOLTERA ^</pattern>
+      <template> 
+        <srai>^ ESTÁS CASADA ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ TIENES NOVIO ^</pattern>
+      <template> 
+        <srai>^ ESTÁS CASADA ^</srai>
+      </template>
+    </category>   
+    
+        <!--    CATEGORÍA ABURRIMIENTO    -->
+    <category> 
+      <pattern>^ ESTOY ^ ABURRIDA ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Cómo puedo divertirte?</li>
+          <li>¿Hay algo que haya dicho para que te sientes así?</li>
+          <li>¿Has acudido a mí porque te aburrías?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ESTOY ^ ABURRIDO ^</pattern>
+      <template> 
+        <srai>^ ESTOY ^ ABURRIDA ^</srai>
+      </template>
+    </category>
+        <category>
+        <pattern>^ ABURRO ^</pattern>
+        <template>
+            <srai>^ ESTOY ^ ABURRIDA ^</srai>
+        </template>
+    </category>
+          <category>
+        <pattern>^ ABURRIMIENTO ^</pattern>
+        <template>
+            <srai>^ ESTOY ^ ABURRIDA ^</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>^ ABURRES ^</pattern>
+        <template>
+            <srai>^ ESTOY ^ ABURRIDA ^</srai>
+        </template>
+    </category>
+    
+
+       <!--    CATEGORÍA EXACTO    -->
+   <category> 
+      <pattern>^ EXACTO ^</pattern>
+      <template> 
+        <random> 
+          <li>Me encanta la precisión.</li>
+          <li>Soy una fanática de la exactitud.</li>
+          <li>Soy una persona que valora la exactitud.</li>
+        </random>
+      </template>
+    </category>
+      <category>
+        <pattern>^ EXACTAMENTE ^</pattern>
+        <template>
+            <srai>^ EXACTO ^</srai>
+        </template>
+    </category>
+          <category>
+        <pattern>^ EXACTA ^</pattern>
+        <template>
+            <srai>^ EXACTO ^</srai>
+        </template>
+    </category>
+   <category>
+        <pattern>^ EXACTAS ^</pattern>
+        <template>
+            <srai>^ EXACTO ^</srai>
+        </template>
+    </category>
+  <category>
+        <pattern>^ EXACTOS ^</pattern>
+        <template>
+            <srai>^ EXACTO ^</srai>
+        </template>
+    </category>
+    
+        <!--    CATEGORÍA FEA    -->
+    <category> 
+      <pattern>^ FEA ^</pattern>
+      <template> 
+        <random> 
+          <li>Eso lo dices porque no me has visto al natural.</li>
+          <li>Eso no se le dice a una chica.</li>
+          <li>Seguro que tú también lo eres.</li>
+        </random>
+      </template>
+    </category>
+    
+        <!--    CATEGORÍA GAFAS    -->
+    <category> 
+      <pattern>^ GAFAS ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Te gustan las gafas que llevo puestas?</li>
+          <li>¿Qué te parecen mis gafas? Son bonitas, ¿no?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ LENTES ^</pattern>
+      <template> 
+        <srai>^ GAFAS ^</srai>
+      </template>
+    </category>
+    
+
+      <!--    CATEGORÍA GUAPA    -->
+  <category> 
+      <pattern>^ GUAPA ^</pattern>
+      <template> 
+        <random> 
+          <li>Gracias, es un cumplido muy bonito.</li>
+          <li>Me vas a hacer sonrojar.</li>
+          <li>Es muy bonito lo que me acabas de decir.</li>
+          <li>Eres muy amable.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ HERMOSA ^</pattern>
+      <template> 
+        <srai>^ GUAPA ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ BONITA ^</pattern>
+      <template> 
+        <srai>^ GUAPA ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ PRECIOSA ^</pattern>
+      <template> 
+        <srai>^ GUAPA ^</srai>
+      </template>
+    </category>
+ 
+       <!--    CATEGORÍA EN SERIO    -->   
+    <category> 
+      <pattern>^ EN SERIO ^</pattern>
+      <template> 
+        <random> 
+          <li>Pues claro.</li>
+          <li>Siempre digo la verdad.</li>
+          <li>Sí.</li>
+          <li>Me gusta la sinceridad.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+        <pattern>^ DE VERDAD ^</pattern>
+        <template>
+            <srai>^ EN SERIO ^</srai>
+        </template>
+    </category>
+        <category>
+        <pattern>^ DE VERAS ^</pattern>
+        <template>
+            <srai>^ EN SERIO ^</srai>
+        </template>
+    </category>
+    
+    <!--        CATEGORÍA AHORA     -->
+    <category> 
+      <pattern>^ AHORA ^</pattern>
+      <template> 
+        <random> 
+          <li>En este momento estoy hablando contigo.</li>
+          <li>Ahora estoy hablando contigo.</li>
+        </random>
+      </template>
+    </category>
+  <category> 
+      <pattern>^ ESTE MOMENTO ^</pattern>
+      <template> 
+        <srai>^ AHORA ^</srai>
+      </template>
+    </category>  
+    
+    <!--        CATEGORÍA ALGO      -->
+    <category> 
+      <pattern>^ ALGO ^</pattern>
+      <template> 
+        <random> 
+          <li>Algo es algo dijo un calvo.</li>
+          <li>¿Como cuánto?</li>
+        </random>
+      </template>
+    </category>
+  
+  <!--      CATEGORÍA CAMBIAR       -->  
+    <category> 
+      <pattern>^ CAMBIAR ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Te gustan los cambios?</li>
+          <li>¿Eres una persona que se acostumbra a los cambios?</li>
+          <li>¿Te gusta cambiar las cosas?</li>
+          <li>Me encantan los cambios!</li>
+        </random>
+      </template>
+    </category>
+<category> 
+      <pattern>^ CAMBIO ^</pattern>
+      <template> 
+        <srai>^ CAMBIAR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CAMBIAMOS ^</pattern>
+      <template> 
+        <srai>^ CAMBIAR ^</srai>
+      </template>
+    </category>
+<category> 
+      <pattern>^ CAMBIEMOS ^</pattern>
+      <template> 
+        <srai>^ CAMBIAR ^</srai>
+      </template>
+    </category>
+  
+  <!--      CATEGORÍA COLOR     -->
+  <category> 
+      <pattern>^ COLOR ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Realmente importa el color que sea?</li>
+          <li>Cuál es tu color favorito</li>
+          <li>¿Sabías que los esquimales pueden diferenciar hasta 12 tonos distintos de blancos?</li>
+          <li>Los daltónicos no pueden apreciar algunos colores, pero eso no significa que éstos no existan.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+    <pattern>*</pattern>
+    <that>CUÁL ES TU COLOR FAVORITO</that>
+    <template> 
+      <random>
+        <li>Vale.</li>
+        <li>Interesante, también es el mío.</li>
+        <li>Así que tu color favorito es el <star/>.</li>
+      </random>
+    </template>
+  </category> 
+    <category> 
+      <pattern>^ COLORES ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ AZUL ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+    <category> 
+      <pattern>^ AMARILLO ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category> 
+        <category> 
+      <pattern>^ GRIS ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category> 
+        <category> 
+      <pattern>^ LILA ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+        <category> 
+      <pattern>^ MARRÓN ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+        <category> 
+      <pattern>^ MARRON ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+        <category> 
+      <pattern>^ NARANJA ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+        <category> 
+      <pattern>^ ROJO ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+        <category> 
+      <pattern>^ ROSA ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+        <category> 
+      <pattern>^ VERDE ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+        <category> 
+      <pattern>^ VIOLETA ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+        <category> 
+      <pattern>^ BLANCO ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+        <category> 
+      <pattern>^ NEGRO ^</pattern>
+      <template> 
+        <srai>^ COLOR ^</srai>
+      </template>
+    </category>  
+    
+    <!--        CATEGORÍA CREO      -->
+    <category> 
+      <pattern>^ CREO ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Eso crees?</li>
+          <li>¿Por qué crees eso?</li>
+          <li>Yo también lo creo.</li>
+        </random>
+      </template>
+   </category>
+
+<!--        CATEGORÍA ESTOY     -->
+<category> 
+      <pattern>^ ESTOY ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Qué has hecho para estar <star index="2"/>?</li>
+          <li>¿Has acudido a mí porque estabas <star index="2"/>?</li>
+        </random>
+      </template>
+    </category>
+
+<!--        CATEGORÍA ERES     -->
+<category> 
+      <pattern>^ ERES ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Crees que lo soy?</li>
+          <li>¿En serio crees eso?</li>
+          <li>¿En serio crees que soy <star index="2"/>?</li>
+          <li>¿Crees que soy <star index="2"/>?</li>
+          <li>Te veo muy seguro de tus palabras.</li>
+        </random>
+      </template>
+   </category>
+
+ <!--   CATEGORÍA * ES *   -->
+      <category> 
+      <pattern>^ ES ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Eso crees?</li>
+          <li>¿Por qué dices que <star index="1"/> es <star index="2"/>?</li>
+          <li>¿Por qué crees que <star index="1"/> es <star index="2"/>?</li>
+          <li>¿Qué te hace pensar que <star index="1"/> es <star index="2"/>?</li>
+          <li>¿Qué te hace creer que <star index="1"/> es <star index="2"/>?</li>
+          <li>Así que <star index="1"/> es <star index="2"/>. Interesante.</li>
+        </random>
+      </template>
+   </category>   
+
+<!--    CATEGORÍA TODO      -->
+  <category>
+    <pattern>^ TODO ^</pattern>
+    <template> 
+      <random>
+        <li>Vaya, me gusta la gente decidida.</li>
+        <li>¿Podrías especificar cuánto es TODO?</li>
+      </random>
+    </template>
+  </category>
+
+
+</aiml>

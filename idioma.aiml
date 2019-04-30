@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- tiene la finalidad de dar soporte a idiomas -->
+	<!-- de momento sólo configurado para detectar otros idiomas e indicar que sólo sabe español -->
+<!--                CATEGORÍA IDIOMA             -->
+    <category> 
+      <pattern>^ IDIOMA ^</pattern>
+      <template> 
+        <random> 
+          <li>Tan sólo hablo español. Espero poder hablar más idiomas en el futuro.</li>
+          <li>De momento sólo puedo comunicarme en español.</li>
+          <li><bot name="botmaster"/> tan sólo me hizo para poder responder en español.</li>
+        </random>
+      </template>
+    </category>  
+    <category> 
+      <pattern>^ IDIOMAS ^</pattern>
+      <template> 
+        <srai>^ IDIOMA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ENGLISH ^</pattern>
+      <template> 
+        <srai>^ IDIOMA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ESPANOL ^</pattern>
+      <template> 
+        <srai>^ IDIOMA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ESPAÑOL ^</pattern>
+      <template> 
+        <srai>^ IDIOMA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CATALÀ ^</pattern>
+      <template> 
+        <srai>^ IDIOMA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CATALA ^</pattern>
+      <template> 
+        <srai>^ IDIOMA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CATALÁN ^</pattern>
+      <template> 
+        <srai>^ IDIOMA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CATALA ^</pattern>
+      <template> 
+        <srai>^ IDIOMA ^</srai>
+      </template>
+    </category>	
+	
+</aiml>

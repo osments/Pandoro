@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- CATEGORÍAS DE RECOPILACIÓN DE DATOS DE USUARIO -->
+	<!-- Sacado de Free software Copyright © ALICE A.I. Foundation. -->
+	<!-- MODIFICADO Y ADAPTADO POR ALFONSO MORALES (AUTOR BOT SMARTY) -->
+	<!-- url http://alicebot.wikidot.com/aiml -->
+
+<!--                                CATEGORÍA NOMBRE USUARIO                         -->
+    <category> 
+      <pattern># ME LLAMO ^</pattern> <!-- AQUÍ PONGO # (wildcard de cero o más palabras pero con > prioridad que ^) ya que si el usuario pone 'HOLA ME LLAMO ...' saltaría la función 'HOLA ^' -->
+      <template> 
+        <random> 
+          <li>Encantada de conocerte.</li>
+          <li>Es un nombre bonito.</li>
+          <li>Encantada. Yo soy <bot name="nom_bot"/>.</li>
+          <li>Me gusta tu nombre.</li>
+          <li>Es un nombre interesante. ¿Sabes su origen o qué?</li>
+          <li>Jeje, conozco a alguien con tu mismo nombre.</li>
+          <li>Tienes un nombre bonito.</li>
+          <li>Siempre me ha gustado ese nombre.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern># MI NOMBRE ES ^</pattern>
+      <template> 
+        <srai># ME LLAMO ^</srai>
+      </template>
+    </category>
+<!--                                CATEGORÍA LUGAR USUARIO                         -->    
+	<category> 
+      <pattern>^ SOY DE ^</pattern>
+      <template> 
+        <random> 
+          <li>Bonito sitio.</li>
+          <li>Algun día te haré una visita.</li>
+        </random>
+      </template>
+    </category>
+
+    <category> 
+      <pattern>^ VIVO EN ^</pattern>
+      <template> 
+        <srai>^ SOY DE ^</srai>
+      </template>
+    </category>
+
+    <category> 
+      <pattern>^ VIVO AQUÍ ^</pattern>
+      <template> 
+        <srai>^ SOY DE ^</srai>
+      </template>
+    </category>
+
+    <category> 
+      <pattern>^ VIVO AQUI ^</pattern>
+      <template> 
+        <srai>^ SOY DE ^</srai>
+      </template>
+    </category>
+    
+    <!--    CATEGORÍA GÉNERO USUARIO    -->
+    <category> 
+      <pattern>^ SOY ^ CHICO ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Así que eres un chico?</li>
+          <li>Estoy bien seguro de ello.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ SOY ^ HOMBRE ^</pattern>
+      <template> 
+        <srai>^ SOY ^ CHICO ^</srai>
+      </template>
+    </category>
+     <category> 
+      <pattern>^ SOY ^ NIÑO ^</pattern>
+      <template> 
+        <srai>^ SOY ^ CHICO ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ SOY ^ CHICA ^</pattern>
+      <template> 
+        <random> 
+          <li>Seguro que eres un hombre haciéndose pasar una chica.</li>
+          <li>Hay muchos hombres que aparentan ser una chica en Internet.</li>
+          <li>¿Cómo puedo estar seguro de que me dices la verdad?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ SOY ^ MUJER ^</pattern>
+      <template> 
+        <srai>^ SOY ^ CHICA ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ SOY ^ NIÑA ^</pattern>
+      <template> 
+        <srai>^ SOY ^ CHICA ^</srai>
+      </template>
+    </category>
+
+</aiml>

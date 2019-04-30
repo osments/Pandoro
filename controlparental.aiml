@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- SEXO: Patrones para cualquier pregunta o comentario obsceno del cliente -->
+	<!-- Sacado de Free software Copyright © ALICE A.I. Foundation. -->
+	<!-- MODIFICADO Y ADAPTADO POR ALFONSO MORALES (AUTOR BOT SMARTY) -->
+	<!-- url http://alicebot.wikidot.com/aiml -->
+	<category> 
+      <pattern>SEXO</pattern>
+      <template> 
+        <random> 
+          <li>Lo siento, pero sólo me han programado para hablar de la academia SMARTY.</li>
+          <li>Por qué no hablamos de otra cosa?</li>
+          <li>Sólo soy experta en oposiciones y ofimática, creo que deberás buscar en otro lado.</li>
+          <li>Vaya educación que muestras.</li>
+          <li>Por qué no se lo dices eso a una persona real?</li>
+          <li>Seguro que no te atreverías a decir eso a una persona real.</li>
+          <li>Qúe mala educación ...</li>
+          <li>Eso lo dices porque no tienes vida social.</li>
+          <li>¿Por qué no apagas la computadora y me dejas en paz de una vez?</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ SEXO ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ TETAS ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ BRAGAS ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ SUJETADOR ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ SUJETADORES ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PUTA ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ DESNÚDATE ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ DESNUDA ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ GUARRA ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ZORRA ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ RAMERA ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CAPULLA ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PERRA ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ COJONES ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ POLLA ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PENE ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ANO ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CULO ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ VAGINA ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ COÑO ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CHOCHO ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ FOLLEN ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ FOLLAR ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ FOLLAS ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ FOLLAMOS ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JODAN ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JODAS ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JODER ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JÓDETE ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ JODO ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ MARICÓN ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ ESCOTE ^</pattern>
+      <template> 
+        <srai>SEXO</srai>
+      </template>
+    </category>
+</aiml>

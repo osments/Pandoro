@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- categorías a desarrollar -->
+	<!--    CATEGORÍA Y     -->
+ <!--   <category>
+    <pattern>Y</pattern>
+    <template> 
+      <random>
+        <li>¿Y?</li>
+        <li>¿Qué más?</li>
+      </random>
+    </template>
+  </category>   -->
+  
+</aiml>

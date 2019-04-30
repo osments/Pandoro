@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- archivo independiente sobre SI Y NO, GRACIAS TAMBIÉN-->
+	<!-- el objetivo de este archivo es tener localizadas estas sentencias ... -->
+	<!-- ... ya que son muy delicadas y complicadas de interpretar, especialmente ... -->
+	<!-- ... el uso de wildcards, ya que dependerá mucho de la temática del bot -->
+	<category>
+    <pattern>^ NO ^</pattern>
+    <template> 
+      <random>
+        <li>¿Entonces?</li>
+        <li>Vale, si tú lo dices.</li>
+      </random>
+    </template>
+    </category>
+
+<!-- SI -->
+    <category>
+    <pattern>^ SÍ ^</pattern>
+    <template> 
+      <random>
+        <li>Perfecto.</li>
+        <li>Bien.</li>
+        <li>Vale.</li>
+        <li>Excelente.</li>
+      </random>
+    </template>
+    </category>
+    <category> 
+      <pattern>^ SI ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ OK ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ VALE ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ YA ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CLARO ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ EXCELENTE ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ AH ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ OH ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ VAYA ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ A VER ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ PERFECTO ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ PERFECTAMENTE ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ GENIAL ^</pattern>
+      <template> 
+        <srai>SÍ</srai>
+      </template>
+    </category>
+            <!--    CATEGORÍA GRACIAS    -->
+    <category>
+    <pattern>^ GRACIAS ^</pattern>
+    <template> 
+      <random>
+        <li>Encantada.</li>
+        <li>De nada.</li>
+        <li>Gracias a ti.</li>
+      </random>
+    </template>
+  </category>
+  
+</aiml>

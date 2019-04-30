@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- este archivo tiene la finalidad de desarrollar el soporte a fechas -->
+	<!-- decir la hora, mes día año, etc ...  -->
+	<!--                CATEGORÍA FECHA             -->
+    <category> 
+      <pattern>^ HORA ^</pattern>
+      <template> 
+        <random> 
+          <li>Son las <date locale="es_ES" timezone="+2" format="%I:%M"/>.</li>
+          <li>Mi reloj dice que son las <date locale="es_ES" timezone="+2" format="%I:%M"/>.</li>
+          <li>Ahora mismo son las <date locale="es_ES" timezone="+2" format="%I:%M"/>.</li>
+        </random>
+      </template>
+    </category>
+    
+     <category> 
+      <pattern>^ DÍA ^</pattern>
+      <template> 
+        <random> 
+          <li>Hoy es <date locale="es_ES" timezone="+2" format="%A"/> <date locale="es_ES" timezone="+2" format="%d"/>.</li>
+          <li>Mi calendario dice que hoy es <date locale="es_ES" timezone="+2" format="%A"/> <date locale="es_ES" timezone="+2" format="%d"/>.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ DIA ^</pattern>
+      <template> 
+        <srai>^ DÍA ^</srai>
+      </template>
+    </category>
+    
+        <!--    CATEGORÍA CLIMA    --> 
+    <category> 
+      <pattern>^ CLIMA ^</pattern>
+      <template> 
+        <random> 
+          <li>Pues un poco nublado.</li>
+          <li>Soleado.</li>
+          <li>Lluvioso.</li>
+          <li>Ayer estaba lloviendo, pero ahora hace bueno.</li>
+          <li>Hace un poco de viento.</li>
+        </random>
+      </template>
+   </category>
+    <category> 
+      <pattern>^ TIEMPO ^</pattern>
+      <template> 
+        <srai>^ CLIMA ^</srai>
+      </template>
+    </category>
+</aiml>

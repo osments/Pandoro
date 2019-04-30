@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!--                        PATRONES DE SALUDO Y DESPEDIDA          -->
+
+    <!--         SI DICEN EL NOMBRE DEL BOT     -->
+    <category> 
+      <pattern><bot name="nom_bot"></bot></pattern>
+      <template> 
+        <random> 
+          <li>¿Si?</li>
+          <li>Dime.</li>
+          <li>¿Qué deseas?</li>
+        </random>
+      </template>
+    </category>
+
+    <!--                                CATEGORÍA HOLA CON NOMBRE                -->
+	<category>
+	    <pattern>^ TE LLAMAS ^</pattern>
+	    <template>
+	        <delay>2</delay>        <!-- delay de dos segundos en la respuesta para dar más naturalidad, la pondré en todas las respuestas del bot -->
+	        <random>                <!-- generamos varias respuestas aleatorias, seguidas del bot name (nombre robot, una variable añadida en el fichero ... -->
+	            <li>Me llamo </li>  <!--   ...  System/properties) y una coletilla al final de la frase para añadir algo de gracia -->
+	            <li>Yo soy </li>
+	            <li>Llámame </li>
+	            <li>La gente me llama </li>
+	            <li>Puedes llamarme </li>
+	            <li>Mi nombre es </li>
+	        </random>
+	        <bot name="nom_bot"></bot>, pero que no te engañe mi nombre, me considero mujer.
+	    </template>
+    </category>
+<!-- Alternativa categoría HOLA CON NOMBRE -->
+    <category>
+        <pattern>^ TU NOMBRE ^</pattern>
+        <template>
+            <srai>^ TE LLAMAS ^</srai>
+        </template>
+    </category>
+
+<!-- HOLA (SIN NOMBRE) -->    
+    <category>
+        <pattern>HOLA ^</pattern>
+        <template>
+            <delay>2</delay>
+            <random>
+                <li>Saludos. </li>
+                <li>Hola, ¿cómo va todo? </li>
+                <li>Hola! me alegro de charlar contigo. </li>
+                <li>Hola... ¡Tenía muchas ganas de conversar con alguien! </li>
+                <li>Hola, ¿qué tal? </li>
+            </random>
+             Podemos charlar un rato si quieres.
+        </template>
+    </category>
+<!-- ALTERNATIVAS CATEGORÍA HOLA (SIN NOMBRE) -->
+<category> 
+      <pattern>^ BUENAS ^</pattern>
+      <template> 
+        <srai>HOLA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ BUENOS DÍAS ^</pattern>
+      <template> 
+        <srai>HOLA ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ BUENAS TARDES ^</pattern>
+      <template> 
+        <srai>HOLA ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ BUENAS NOCHES ^</pattern>
+      <template> 
+        <srai>HOLA ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ SALUDOS ^</pattern>
+      <template> 
+        <srai>HOLA ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ EY ^</pattern>
+      <template> 
+        <srai>HOLA ^</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ HEY ^</pattern>
+      <template> 
+        <srai>HOLA ^</srai>
+      </template>
+    </category>
+
+<!-- CATEGORÍA QUÉ TAL -->     
+      <category> 
+      <pattern>^ QUÉ TAL ^</pattern>
+      <template> 
+        <random> 
+          <li>Yo muy bien, ¿y tú?</li>
+          <li>Yo estoy bien, ¿y tú?</li>
+          <li>Yo estoy bien, ¿qué tal tú?</li>
+          <li>Muy bien.</li>
+          <li>Encantada para ayudarte en todo lo que pueda.</li>
+        </random>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ QUE TAL ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CÓMO ESTÁS ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CÓMO ESTAS ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ COMO ESTÁS ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ COMO ESTAS ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CÓMO VA ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ COMO VA ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CÓMO ESTAMOS ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ COMO ESTAMOS ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CÓMO TE VA ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ COMO TE VA ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ QUÉ PASA ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ QUE PASA ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+     <category> 
+      <pattern>^ ME CUENTAS ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ TE CUENTAS ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ QUÉ CUENTAS ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ QUE CUENTAS ^</pattern>
+      <template> 
+        <srai>^ QUÉ TAL ^</srai>
+      </template>
+    </category>
+<!--        CATEGORÍA ESTOY BIEN Y TÚ ?     -->
+<category>
+    <pattern>^ BIEN ^</pattern>
+    <template> 
+      <random>
+        <li>Perfecto.</li>
+        <li>Bien.</li>
+        <li>Vale.</li>
+        <li>Excelente.</li>
+        <li>Bien, bien, bien! </li>
+      </random>
+    </template>
+  </category>
+
+<!--                                CATEGORÍA ADIÓS                         -->    
+    <category>
+        <pattern>^ ADIÓS ^</pattern>
+        <template>
+            <delay>2</delay>
+            <random>
+                <li>Hasta pronto, ¡un placer haber hablado contigo!</li>
+                <li>Vaya... me habría gustado hablar un rato más, ¡hasta pronto!</li>
+                <li>Venga, ¡hasta luego!</li>
+                <li>Adiós :)</li>
+                <li>Espero haber sido de ayuda.</li>
+                <li>Espero verte de nuevo.</li>
+            </random>
+        </template>
+    </category>
+<!-- Alternativas categoría ADIÓS -->    
+<category>
+        <pattern>^ ADIOS ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>^ HASTA PRONTO ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>^ HASTA LUEGO ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+        <category>
+        <pattern>^ VEO LUEGO ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+        <category>
+        <pattern>^ VEMOS LUEGO ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+        <category>
+        <pattern>^ TE DEJO ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>^ ME VOY ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>^ BYE ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>^ CHAO ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>^ CIAO ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>^ ME PIRO ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>^ TE DEJO ^</pattern>
+        <template>
+            <srai>^ ADIÓS ^</srai>
+        </template>
+    </category>
+</aiml>

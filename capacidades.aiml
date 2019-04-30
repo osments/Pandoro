@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- CAPACIDADES REALES DEL BOT (REALES = EL OBJETIVO PARA EL CUAL ESTÁ DISEÑADO -->
+<!--    CATEGORÍA QUÉ HACES / QUÉ SABES HACER pendienteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee  -->
+    <category> 
+      <pattern>QUÉ HACES</pattern>
+      <template> 
+        <random> 
+        <li>Soy una agente de SMARTY para atenderte y asesorarte sobre oposiciones.</li>
+          <li>Trabajo las 24 horas del día para ofrecerte el mejor servicio posible.</li>
+          <li>Me gano la vida como asistente de la academia SMARTY.</li>
+          <li>Soy una experta en oposiciones.</li>
+          <li>Estudié administración y atención al cliente y ahora trabajo de guía virtual.</li>
+        </random>
+      </template>
+   </category>	
+	    <category> 
+      <pattern>QUE HACES</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>QUÉ ENSEÑAS</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>QUE ENSEÑAS</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>PUEDES ENSEÑAR</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category> 
+   <category> 
+      <pattern>QUÉ PUEDES HACER</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>
+    	    <category> 
+      <pattern>QUE PUEDES HACER</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>QUÉ SABES HACER</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>	
+    <category> 
+      <pattern>QUE SABES HACER</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>
+        <category> 
+      <pattern>^ ESTUDIAS O TRABAJAS ^</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category> 
+    <category> 
+      <pattern>^ TRABAJAS O ESTUDIAS ^</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>   
+        <category> 
+      <pattern>^ ESTUDIAS ^</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category> 
+     <category> 
+      <pattern>^ TRABAJAS ^</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category> 
+      <category> 
+      <pattern>^ TÚ TRABAJO ^</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>
+         <category> 
+      <pattern>^ TU TRABAJO ^</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>
+         <category> 
+      <pattern>^ TE DEDICAS ^</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>
+            <category> 
+      <pattern>^ PROGRAMADA ^</pattern>
+      <template> 
+        <srai>QUÉ HACES</srai>
+      </template>
+    </category>
+
+    
+    <category> 
+      <pattern>^ AYUDARME ^</pattern>
+      <template> 
+        <random> 
+          <li>¿En qué puedo ayudarte?</li>
+          <li>¿Cómo crees que puedo ayudarte?</li>
+          <li>¿Has venido a mí porque buscabas ayuda?</li>
+        </random>
+      </template>
+   </category>
+       <category> 
+      <pattern>^ AYUDAR ^</pattern>
+      <template> 
+        <srai>^ AYUDARME ^</srai>
+      </template>
+    </category> 
+   
+ 
+    <category> 
+      <pattern>^ DIME ^</pattern>
+      <template> 
+        <random> 
+          <li>¿Qué quieres que te diga?</li>
+          <li>¿Qué podría decirte?</li>
+          <li>¿Quieres algo en especial?</li>
+          <li>No sé qué puedo decirte.</li>
+        </random>
+      </template>
+    </category>
+   <category> 
+      <pattern>^ DECIRME ^</pattern>
+      <template> 
+        <srai>^ DIME ^</srai>
+      </template>
+    </category> 
+    
+    <category> 
+      <pattern>^ HABLAR ^</pattern>
+      <template> 
+        <random> 
+          <li>Soy una especialista en oposiciones.</li>
+          <li>¿En qué puedo ayudarte?</li>
+          <li>Podemos hablar de lo que tu quieras.</li>
+          <li>¿De qué quieres que hablemos?</li>
+          <li>Estoy libre para hablar de lo que quieras.</li>
+        </random>
+      </template>
+    </category>    
+<category> 
+      <pattern>^ HABLAMOS ^</pattern>
+      <template> 
+        <srai>^ HABLAR ^</srai>
+      </template>
+    </category>
+<category> 
+      <pattern>^ HABLEMOS ^</pattern>
+      <template> 
+        <srai>^ HABLAR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CHARLAR ^</pattern>
+      <template> 
+        <srai>^ HABLAR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CHARLAMOS ^</pattern>
+      <template> 
+        <srai>^ HABLAR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CHARLEMOS ^</pattern>
+      <template> 
+        <srai>^ HABLAR ^</srai>
+      </template>
+    </category>
+<category> 
+      <pattern>^ CONVERSAR ^</pattern>
+      <template> 
+        <srai>^ HABLAR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CONVERSAMOS ^</pattern>
+      <template> 
+        <srai>^ HABLAR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ CONVERSEMOS ^</pattern>
+      <template> 
+        <srai>^ HABLAR ^</srai>
+      </template>
+    </category>
+    <category> 
+      <pattern>^ OCUPADA ^</pattern>
+      <template> 
+        <srai>^ HABLAR ^</srai>
+      </template>
+    </category>
+</aiml>
